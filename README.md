@@ -94,5 +94,9 @@ or noisy-hardware performance. Experiments use ideal CPU statevector simulation.
 The scorer logic was checked against the unchanged organizer scorer, but its
 packaged source has comment and variable-name edits.
 
-Reports, AI-use disclosure and saved outputs are in the separate submission
-package. They are not part of this source-only repository upload.
+## Submission documents
+
+- [Technical report](QTG_Report.pdf)
+- [AI-use disclosure](AI_Usage_Disclosure.pdf)
+
+Saved experiment outputs are available in the separate submission package.
