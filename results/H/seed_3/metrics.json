@@ -1,0 +1,150 @@
+{
+  "baselines": {
+    "best_alternating": {
+      "bits": "10100101",
+      "cost": 261.0,
+      "delay": 105,
+      "overflow": 30,
+      "switches": 6,
+      "final_queues": {
+        "A": {
+          "NS": 10,
+          "EW": 10
+        },
+        "B": {
+          "NS": 15,
+          "EW": 10
+        }
+      }
+    },
+    "greedy": {
+      "bits": "10100111",
+      "cost": 244.0,
+      "delay": 105,
+      "overflow": 27,
+      "switches": 4,
+      "final_queues": {
+        "A": {
+          "NS": 10,
+          "EW": 10
+        },
+        "B": {
+          "NS": 11,
+          "EW": 14
+        }
+      }
+    },
+    "exact_optimum": {
+      "bits": "10000111",
+      "cost": 234.0,
+      "delay": 102,
+      "overflow": 26,
+      "switches": 2,
+      "final_queues": {
+        "A": {
+          "NS": 14,
+          "EW": 6
+        },
+        "B": {
+          "NS": 8,
+          "EW": 14
+        }
+      },
+      "all_minimizers": [
+        "10000111"
+      ]
+    },
+    "uniform_random_mean": 300.28125,
+    "qubo_exact_minimizer": {
+      "bits": "10000111",
+      "cost": 234.0,
+      "delay": 102,
+      "overflow": 26,
+      "switches": 2,
+      "final_queues": {
+        "A": {
+          "NS": 14,
+          "EW": 6
+        },
+        "B": {
+          "NS": 8,
+          "EW": 14
+        }
+      },
+      "qubo_energy": 234.04975175577687,
+      "all_minimizers": [
+        "10000111"
+      ],
+      "official_costs_of_all_minimizers": {
+        "10000111": 234.0
+      },
+      "absolute_regret": 0.0,
+      "relative_regret": 0.0
+    }
+  },
+  "qaoa": {
+    "shots": 4096,
+    "mean_official_cost": 235.053955078125,
+    "lift": 0.9840987446958982,
+    "elite_enrichment": 19.60576923076923,
+    "elite_fraction": 0.99560546875,
+    "elite_set": [
+      "10000111",
+      "10000110",
+      "10010111",
+      "10010110",
+      "10110111",
+      "10100111",
+      "10110110",
+      "10100110",
+      "10000100",
+      "00110111",
+      "10000101",
+      "10010100",
+      "00100111"
+    ],
+    "best_observed": {
+      "bits": "10000111",
+      "cost": 234.0,
+      "delay": 102,
+      "overflow": 26,
+      "switches": 2,
+      "final_queues": {
+        "A": {
+          "NS": 14,
+          "EW": 6
+        },
+        "B": {
+          "NS": 8,
+          "EW": 14
+        }
+      }
+    },
+    "mode": {
+      "bits": "10000111",
+      "cost": 234.0,
+      "delay": 102,
+      "overflow": 26,
+      "switches": 2,
+      "final_queues": {
+        "A": {
+          "NS": 14,
+          "EW": 6
+        },
+        "B": {
+          "NS": 8,
+          "EW": 14
+        }
+      }
+    },
+    "optimal_shot_fraction": 0.333984375,
+    "exact_distribution_mean_official_cost": 235.12860960127884,
+    "exact_distribution_metric_note": "Diagnostic only; headline metrics use 4096 raw shots"
+  },
+  "degenerate_lift_denominator": false,
+  "surrogate_diagnostics": {
+    "uniform_rmse": 4.811372359425189,
+    "max_absolute_error": 18.428722463178758,
+    "note": "Quadratic projection is an approximation; exact enumeration here is evaluation only"
+  }
+}

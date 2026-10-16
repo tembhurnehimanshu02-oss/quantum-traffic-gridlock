@@ -34,8 +34,9 @@ Provide a scenario JSON file using the challenge's input schema:
 python run.py --scenario scenario.json --seed 0 --out results/run0
 ```
 
-Use an output directory separate from the input scenario. Scenario files and
-saved experiment results are supplied separately and are not included here.
+Use an output directory separate from the input scenario. The supplied inputs
+are scenario_R.json and scenario_H.json. Their saved five-seed results are in
+results/R/ and results/H/.
 The same command accepts R, H or a new compatible scenario without code changes.
 Optional `--method uniform` selects the uniform QUBO comparison rule.
 
@@ -99,4 +100,19 @@ packaged source has comment and variable-name edits.
 - [Technical report](QTG_Report.pdf)
 - [AI-use disclosure](AI_Usage_Disclosure.pdf)
 
-Saved experiment outputs are available in the separate submission package.
+## Saved results
+
+- [R scenario](scenario_R.json) and [five-seed outputs](results/R/)
+- [H scenario](scenario_H.json) and [five-seed outputs](results/H/)
+- [Results summary](RESULTS.md) and [full baseline metrics](RESULTS_SUMMARY.json)
+
+Each scenario includes seeds 0-4. Every run contains the QUBO, bound OpenQASM 3
+circuit, 4096 raw counts, decoded schedule, training trace and official metrics.
+All 80 result files match the verified uncommented penultimate solver outputs.
+
+To run the supplied scenarios yourself:
+
+```text
+python run.py --scenario scenario_R.json --seed 0 --out fresh_results/R/seed_0
+python run.py --scenario scenario_H.json --seed 0 --out fresh_results/H/seed_0
+```

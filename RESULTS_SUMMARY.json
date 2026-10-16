@@ -1,0 +1,198 @@
+{
+  "R": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shots_per_seed": 4096,
+    "mean_official_cost": 75.484375,
+    "mean_lift": 0.9560331230283912,
+    "worst_seed_clipped_lift": 0.9521545987776026,
+    "mean_elite_enrichment": 19.00096153846154,
+    "mean_optimal_shot_fraction": 0.61064453125,
+    "baselines": {
+      "best_alternating": {
+        "bits": "10101010",
+        "cost": 116.0,
+        "delay": 73,
+        "overflow": 10,
+        "switches": 6,
+        "final_queues": {
+          "A": {
+            "NS": 10,
+            "EW": 0
+          },
+          "B": {
+            "NS": 7,
+            "EW": 11
+          }
+        }
+      },
+      "greedy": {
+        "bits": "01111001",
+        "cost": 92.5,
+        "delay": 67,
+        "overflow": 6,
+        "switches": 3,
+        "final_queues": {
+          "A": {
+            "NS": 3,
+            "EW": 4
+          },
+          "B": {
+            "NS": 7,
+            "EW": 11
+          }
+        }
+      },
+      "exact_optimum": {
+        "bits": "11101010",
+        "cost": 72.0,
+        "delay": 66,
+        "overflow": 1,
+        "switches": 4,
+        "final_queues": {
+          "A": {
+            "NS": 5,
+            "EW": 4
+          },
+          "B": {
+            "NS": 7,
+            "EW": 8
+          }
+        },
+        "all_minimizers": [
+          "11101010"
+        ]
+      },
+      "uniform_random_mean": 151.25,
+      "qubo_exact_minimizer": {
+        "bits": "11101010",
+        "cost": 72.0,
+        "delay": 66,
+        "overflow": 1,
+        "switches": 4,
+        "final_queues": {
+          "A": {
+            "NS": 5,
+            "EW": 4
+          },
+          "B": {
+            "NS": 7,
+            "EW": 8
+          }
+        },
+        "qubo_energy": 72.21576553440693,
+        "all_minimizers": [
+          "11101010"
+        ],
+        "official_costs_of_all_minimizers": {
+          "11101010": 72.0
+        },
+        "absolute_regret": 0.0,
+        "relative_regret": 0.0
+      }
+    }
+  },
+  "H": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shots_per_seed": 4096,
+    "mean_official_cost": 235.748974609375,
+    "mean_lift": 0.9736128300330034,
+    "worst_seed_clipped_lift": 0.968499528524281,
+    "mean_elite_enrichment": 19.388461538461538,
+    "mean_optimal_shot_fraction": 0.291796875,
+    "baselines": {
+      "best_alternating": {
+        "bits": "10100101",
+        "cost": 261.0,
+        "delay": 105,
+        "overflow": 30,
+        "switches": 6,
+        "final_queues": {
+          "A": {
+            "NS": 10,
+            "EW": 10
+          },
+          "B": {
+            "NS": 15,
+            "EW": 10
+          }
+        }
+      },
+      "greedy": {
+        "bits": "10100111",
+        "cost": 244.0,
+        "delay": 105,
+        "overflow": 27,
+        "switches": 4,
+        "final_queues": {
+          "A": {
+            "NS": 10,
+            "EW": 10
+          },
+          "B": {
+            "NS": 11,
+            "EW": 14
+          }
+        }
+      },
+      "exact_optimum": {
+        "bits": "10000111",
+        "cost": 234.0,
+        "delay": 102,
+        "overflow": 26,
+        "switches": 2,
+        "final_queues": {
+          "A": {
+            "NS": 14,
+            "EW": 6
+          },
+          "B": {
+            "NS": 8,
+            "EW": 14
+          }
+        },
+        "all_minimizers": [
+          "10000111"
+        ]
+      },
+      "uniform_random_mean": 300.28125,
+      "qubo_exact_minimizer": {
+        "bits": "10000111",
+        "cost": 234.0,
+        "delay": 102,
+        "overflow": 26,
+        "switches": 2,
+        "final_queues": {
+          "A": {
+            "NS": 14,
+            "EW": 6
+          },
+          "B": {
+            "NS": 8,
+            "EW": 14
+          }
+        },
+        "qubo_energy": 234.04975175577687,
+        "all_minimizers": [
+          "10000111"
+        ],
+        "official_costs_of_all_minimizers": {
+          "10000111": 234.0
+        },
+        "absolute_regret": 0.0,
+        "relative_regret": 0.0
+      }
+    }
+  }
+}
